@@ -1,5 +1,8 @@
 package com.gao.solution;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Author gs
  * @Date created time 2019/5/18 18:38
@@ -8,18 +11,19 @@ package com.gao.solution;
 public class HappyNum {
 
     public static boolean isHappy(int n) {
+        Map<Integer,Integer> map = new HashMap<Integer, Integer>();
+        map.put(n,n);
+        int sum = n;
+        while(true){
+            while (true){
 
-        String s = String.valueOf(n);
-        int length = s.length();
-        int result = 0;
-        for(int i = 0;i<length;i++){
-            int c = Integer.valueOf(s.charAt(i));
-            result += c*c;
+            }
+//            if(map.containsKey(sum)) {
+//
+//            }
         }
-        if(n == result){
-            return true;
-        }
-        return false;
+
+//        return false;
     }
 
     public static void main(String[] args) {
