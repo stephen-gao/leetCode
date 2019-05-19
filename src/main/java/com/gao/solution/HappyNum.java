@@ -13,21 +13,35 @@ public class HappyNum {
     public static boolean isHappy(int n) {
         Map<Integer,Integer> map = new HashMap<Integer, Integer>();
         map.put(n,n);
-        int sum = n;
-        while(true){
-            while (true){
+        int sum = 0;
 
+        while (true) {
+            System.out.println("n "+n);
+            while (true) {
+                int i = n % 10;
+                if (n == 0) {
+                    break;
+                }
+                sum = sum + i * i;
+                n = n / 10;
             }
-//            if(map.containsKey(sum)) {
-//
-//            }
+            if (sum == 1) {
+                System.out.println("true "+sum);
+                return true;
+            }
+            if (map.containsKey(sum)) {
+                System.out.println("false "+sum);
+                return false;
+            } else {
+                map.put(sum, sum);
+            }
+            n = sum;
+            sum  = 0;
         }
-
-//        return false;
     }
 
     public static void main(String[] args) {
-        boolean b = isHappy(19);
+        boolean b = isHappy(21);
         System.out.println(b);
     }
 }
