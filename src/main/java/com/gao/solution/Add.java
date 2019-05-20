@@ -1,5 +1,12 @@
 package com.gao.solution;
 
+
+/**
+ * @Author gs
+ * @Date created time 2019/5/20 10:20
+ * @Description 两整数之和
+ * 不使用运算符 + 和 -，计算两整数​a 、b之和。
+ */
 public class Add {
 
     public static int add(int a,int b) {
