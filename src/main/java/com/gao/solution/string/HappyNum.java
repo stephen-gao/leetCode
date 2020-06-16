@@ -1,4 +1,4 @@
-package com.gao.solution;
+package com.gao.solution.string;
 
 import java.util.HashMap;
 import java.util.Map;

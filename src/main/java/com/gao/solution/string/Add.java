@@ -1,4 +1,4 @@
-package com.gao.solution;
+package com.gao.solution.string;
 
 
 /**
@@ -13,14 +13,15 @@ public class Add {
         while (b != 0) {
             System.out.println(toBinaryString(a) + " " + toBinaryString(b));
             int temp = a ^ b;
-            b = (a & b) << 1;
+            int t = a & b;
+            b = t << 1;
             a = temp;
         }
         return a;
     }
 
     public static void main(String[] args) {
-        int sum = add(-10, -5);
+        int sum = add(4, 5);
         System.out.println(sum);
     }
 

@@ -1,4 +1,4 @@
-package com.gao.solution;
+package com.gao.solution.string;
 
 /**
  * @Author gs

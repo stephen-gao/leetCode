@@ -1,4 +1,4 @@
-package com.gao.solution;
+package com.gao.solution.string;
 
 import java.util.ArrayList;
 import java.util.List;
