@@ -28,7 +28,7 @@ import java.util.List;
  * @blame GaoSheng
  * @since 2020/06/23 20:31
  **/
-public class Generate {
+public class yanghui {
 
     public static List<List<Integer>> generate(int numRows) {
         List<List<Integer>> lists = new ArrayList<>();
