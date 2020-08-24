@@ -27,14 +27,13 @@ public class DailyTemperatures {
     public static int[] dailyTemperatures(int[] T) {
         int[] day = new int[T.length];
         Stack<Integer> stack = new Stack<>();
-        for (int i = 0; i < T.length; i++) {
-            if(stack.empty()){
-                stack.push(i);
+        stack.push(0);
+        for (int i = 1; i < T.length; i++) {
+            while (!stack.empty() && T[stack.peek()] < T[i]){
+                Integer pop = stack.pop();
+                day[pop] = i - pop;
             }
-            int count = 0;
-            while (!stack.empty()){
-
-            }
+            stack.push(i);
         }
         return day;
     }
